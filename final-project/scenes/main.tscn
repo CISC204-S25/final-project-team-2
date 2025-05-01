@@ -1,3 +1,20 @@
 [gd_scene format=3 uid="uid://dxvn26t6vpc6b"]
 
 [node name="Main" type="Node"]
+res://
+│
+├── Characters/
+│   ├── rock.tscn
+│   └── air.tscn
+│
+├── Levels/
+│   ├── Level__1.tscn
+│   ├── Level_rock_1.tscn
+│   └── Level_Coop_1.tscn
+│
+├── Scripts/
+│   ├── rock.gd
+│   ├── air.gd
+│   └── LevelController.gd
+│
+└── Main.tscn
