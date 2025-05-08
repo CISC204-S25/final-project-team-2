@@ -5,8 +5,11 @@ const SPEED = 100.0
 const JUMP_VELOCITY = -320.0
 const GRAVITY = 900
 const FALL_GRAVITY = 1500
+const MAX_JUMPS = 2
 
-@onready var sprite = $AnimatedSprite2D
+var jumps = 2
+
+@onready var sprite = $Sprite2D
 
 func check_gravity(v):
 	if v.y < 0:
@@ -23,8 +26,13 @@ func _physics_process(delta):
 		velocity.y = 0 
 
 	# Handle jump.
-	if Input.is_action_just_pressed("p1_jump") and is_on_floor():
+	if Input.is_action_just_pressed("p1_jump") and jumps > 1:
 		velocity.y = JUMP_VELOCITY
+		jumps -= 1
+	
+	# Resets jump counter
+	if is_on_floor():
+		jumps = MAX_JUMPS
 
 	# Get the input direction and handle the movement/deceleration.
 	var direction = Input.get_axis("p1_left", "p1_right")
