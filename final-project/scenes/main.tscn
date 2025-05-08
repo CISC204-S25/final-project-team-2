@@ -1,5 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://dxvn26t6vpc6b"]
+[gd_scene load_steps=4 format=3 uid="uid://dxvn26t6vpc6b"]
 
+[ext_resource type="PackedScene" uid="uid://bg0ibqfwjlv4u" path="res://scenes/player1.tscn" id="1_4sje8"]
 [ext_resource type="PackedScene" uid="uid://b1q8owv3huuah" path="res://scenes/player2.tscn" id="1_wyb0p"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_twqhd"]
@@ -7,15 +8,24 @@ size = Vector2(325, 20)
 
 [node name="Main" type="Node"]
 
-[node name="Player2" parent="." instance=ExtResource("1_wyb0p")]
+[node name="Player Movement Test" type="Node2D" parent="."]
 
-[node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(2, 2)
-
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-collision_layer = 2
+[node name="Player1" parent="Player Movement Test" instance=ExtResource("1_4sje8")]
+position = Vector2(22, 0)
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(0, 47)
+[node name="Player2" parent="Player Movement Test" instance=ExtResource("1_wyb0p")]
+position = Vector2(-19, 0)
+collision_mask = 2
+
+[node name="Camera2D" type="Camera2D" parent="Player Movement Test"]
+zoom = Vector2(2, 2)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Player Movement Test"]
+position = Vector2(0, 20)
+collision_layer = 2
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player Movement Test/StaticBody2D"]
+position = Vector2(0, 15)
 shape = SubResource("RectangleShape2D_twqhd")
