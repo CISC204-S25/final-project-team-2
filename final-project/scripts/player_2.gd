@@ -4,7 +4,7 @@ extends CharacterBody2D
 const SPEED = 50.0
 const JUMP_VELOCITY = -100.0
 const ICE_SPEEDUP = 150
-const ICE_SLOWDOWN = 15
+const ICE_SLOWDOWN = 10
 
 const PUSH_FORCE = 30
 const GRAVITY = 300
@@ -38,8 +38,10 @@ func _physics_process(delta):
 	# Flip Sprite
 	if direction > 0:
 		sprite.flip_h = false
+		$WeaponCollision.position.x = 40
 	elif direction < 0:
 		sprite.flip_h = true
+		$WeaponCollision.position.x = -40
 
 	# Play animations
 	if animationPlaying:
@@ -54,9 +56,13 @@ func _physics_process(delta):
 			else:
 				sprite.play("jump_down")
 	else:
-		sprite.play("attack")
-		#$AnimationPlayer.play("attack")
-		
+		if sprite.flip_h == false:
+			$AnimationPlayer.play("attack")
+			sprite.play("attack")
+		else:
+			$AnimationPlayer.play("attack_2")
+			sprite.play("attack")
+
 	if Input.is_action_just_pressed("p2_attack"):
 		animationPlaying = false
 
@@ -80,3 +86,4 @@ func push_objects():
 
 func _on_animated_sprite_2d_animation_finished() -> void:
 	animationPlaying = true
+	$AnimationPlayer.stop()
