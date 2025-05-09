@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bnq2kk7pqg6yk"
-path="res://.godot/imported/Foreground.png-e03c78ba1f2eeaffe6c9fb85f8b38340.ctex"
+path="res://.godot/imported/Foreground.png-2a1ca7ff01926fbf6b59a76ae081827b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/free-winter-holiday-game-backgrounds (1)/PNG/BG_01/Layers/Foreground.png"
-dest_files=["res://.godot/imported/Foreground.png-e03c78ba1f2eeaffe6c9fb85f8b38340.ctex"]
+source_file="res://assets/free-winter-holiday-game-backgrounds (1)/PNG/BG_01/Layers/Foreground.png"
+dest_files=["res://.godot/imported/Foreground.png-2a1ca7ff01926fbf6b59a76ae081827b.ctex"]
 
 [params]
 

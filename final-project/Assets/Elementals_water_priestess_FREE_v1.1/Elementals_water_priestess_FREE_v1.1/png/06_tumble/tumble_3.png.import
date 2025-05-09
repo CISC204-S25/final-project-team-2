@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ntc4j1asde3"
-path="res://.godot/imported/tumble_3.png-fafb6e0f08a653835682ca2195ba2ff1.ctex"
+path="res://.godot/imported/tumble_3.png-0ee60196aeeee947bd05ad120589011b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/06_tumble/tumble_3.png"
-dest_files=["res://.godot/imported/tumble_3.png-fafb6e0f08a653835682ca2195ba2ff1.ctex"]
+source_file="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/06_tumble/tumble_3.png"
+dest_files=["res://.godot/imported/tumble_3.png-0ee60196aeeee947bd05ad120589011b.ctex"]
 
 [params]
 

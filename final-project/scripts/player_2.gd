@@ -1,16 +1,19 @@
 extends CharacterBody2D
 
 # Change these values for movement/jump speed
-const SPEED = 30.0
-const JUMP_VELOCITY = -150.0
+const SPEED = 50.0
+const JUMP_VELOCITY = -100.0
 const ICE_SPEEDUP = 150
 const ICE_SLOWDOWN = 15
 
 const PUSH_FORCE = 30
 const GRAVITY = 300
-const FALL_GRAVITY = 500
+const FALL_GRAVITY = 200
 
 @onready var sprite = $AnimatedSprite2D
+@onready var animation = $AnimationPlayer
+
+var animationPlaying = true
 
 func check_gravity(v):
 	if v.y < 0:
@@ -39,6 +42,24 @@ func _physics_process(delta):
 	elif direction < 0:
 		sprite.flip_h = true
 
+	# Play animations
+	if animationPlaying:
+		if is_on_floor():
+			if direction == 0:
+				sprite.play("idle")
+			else:
+				sprite.play("walk")
+		else:
+			if velocity.y < 0:
+				sprite.play("jump_up")
+			else:
+				sprite.play("jump_down")
+	else:
+		sprite.play("attack")
+		
+	if Input.is_action_just_pressed("p2_attack"):
+		animationPlaying = false
+
 	# Moving left and right with ice momentum
 	if direction: 
 		velocity.x = direction * (SPEED + ICE_SPEEDUP)
@@ -56,3 +77,6 @@ func push_objects():
 		if collider is RigidBody2D:
 			collider.apply_central_impulse(collision.get_normal() * -1 * PUSH_FORCE)
 	
+
+func _on_animated_sprite_2d_animation_finished() -> void:
+	animationPlaying = true

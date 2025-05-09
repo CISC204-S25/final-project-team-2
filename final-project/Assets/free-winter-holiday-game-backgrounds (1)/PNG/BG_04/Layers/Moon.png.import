@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dog6i2qv70job"
-path="res://.godot/imported/Moon.png-ad0c5644702bec28241fb914f018bf01.ctex"
+path="res://.godot/imported/Moon.png-1c3305346d851e09a45c3ec99b2907a4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/free-winter-holiday-game-backgrounds (1)/PNG/BG_04/Layers/Moon.png"
-dest_files=["res://.godot/imported/Moon.png-ad0c5644702bec28241fb914f018bf01.ctex"]
+source_file="res://assets/free-winter-holiday-game-backgrounds (1)/PNG/BG_04/Layers/Moon.png"
+dest_files=["res://.godot/imported/Moon.png-1c3305346d851e09a45c3ec99b2907a4.ctex"]
 
 [params]
 

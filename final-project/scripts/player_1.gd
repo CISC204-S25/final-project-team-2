@@ -13,6 +13,8 @@ var jumps = 2
 
 @onready var sprite = $AnimatedSprite2D
 
+var animationPlaying = true
+
 func check_gravity(v):
 	if v.y < 0:
 		return GRAVITY
@@ -45,6 +47,24 @@ func _physics_process(delta):
 	elif direction < 0:
 		sprite.flip_h = true
 
+	# Play animations
+	if animationPlaying:
+		if is_on_floor():
+			if direction == 0:
+				sprite.play("idle")
+			else:
+				sprite.play("walk")
+		else:
+			if velocity.y < 0:
+				sprite.play("jump_up")
+			else:
+				sprite.play("jump_down")
+	else:
+		sprite.play("attack")
+		
+	if Input.is_action_just_pressed("p1_attack"):
+		animationPlaying = false
+
 	# Moving left and right.
 	if direction:
 		velocity.x = direction * SPEED
@@ -61,3 +81,7 @@ func push_objects():
 		var collider = collision.get_collider()
 		if collider is RigidBody2D:
 			collider.apply_central_impulse(collision.get_normal() * -1 * PUSH_FORCE)
+
+
+func _on_animated_sprite_2d_animation_finished() -> void:
+	animationPlaying = true

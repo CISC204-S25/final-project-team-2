@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c6ajk34xevu5a"
-path="res://.godot/imported/Sky.png-062c38381b006de4513232b814596b9a.ctex"
+path="res://.godot/imported/Sky.png-c51b52dd0a50675a17a0f54cc791add0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/free-winter-holiday-game-backgrounds (1)/PNG/BG_02/Layers/Sky.png"
-dest_files=["res://.godot/imported/Sky.png-062c38381b006de4513232b814596b9a.ctex"]
+source_file="res://assets/free-winter-holiday-game-backgrounds (1)/PNG/BG_02/Layers/Sky.png"
+dest_files=["res://.godot/imported/Sky.png-c51b52dd0a50675a17a0f54cc791add0.ctex"]
 
 [params]
 

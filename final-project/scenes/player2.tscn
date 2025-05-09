@@ -1,26 +1,329 @@
-[gd_scene load_steps=4 format=3 uid="uid://b1q8owv3huuah"]
+[gd_scene load_steps=47 format=3 uid="uid://b6yqtnejqriff"]
 
 [ext_resource type="Script" path="res://scripts/player_2.gd" id="1_65bwc"]
-[ext_resource type="Texture2D" uid="uid://r8l6y05iaxsi" path="res://icon.svg" id="2_42ikn"]
+[ext_resource type="Texture2D" uid="uid://cdhv63jurkggp" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/01_idle/idle_1.png" id="2_5jdcq"]
+[ext_resource type="Texture2D" uid="uid://cfb02uaj1vytm" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/07_1_atk/1_atk_1.png" id="2_n3ski"]
+[ext_resource type="Texture2D" uid="uid://dy4cewcusxjoj" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/07_1_atk/1_atk_2.png" id="3_akyne"]
+[ext_resource type="Texture2D" uid="uid://d01g7p82f4fo6" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/01_idle/idle_2.png" id="3_v4kfo"]
+[ext_resource type="Texture2D" uid="uid://c83rycjm6pbse" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/01_idle/idle_3.png" id="4_6yu3t"]
+[ext_resource type="Texture2D" uid="uid://cvsamhdl2dypj" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/07_1_atk/1_atk_3.png" id="4_43qwl"]
+[ext_resource type="Texture2D" uid="uid://dr0ntb40ec5im" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/07_1_atk/1_atk_4.png" id="5_mhb51"]
+[ext_resource type="Texture2D" uid="uid://b2ld6h8x6p6kl" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/01_idle/idle_4.png" id="5_pvxfd"]
+[ext_resource type="Texture2D" uid="uid://c3onrbdqrgeav" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/01_idle/idle_5.png" id="6_bt4lh"]
+[ext_resource type="Texture2D" uid="uid://dpn6ggcfspclc" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/07_1_atk/1_atk_5.png" id="6_xn126"]
+[ext_resource type="Texture2D" uid="uid://b12llw1c2xpum" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/07_1_atk/1_atk_6.png" id="7_8ukdn"]
+[ext_resource type="Texture2D" uid="uid://cb1bl1aj6rrnl" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/01_idle/idle_6.png" id="7_45rax"]
+[ext_resource type="Texture2D" uid="uid://gi83551umqbj" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/07_1_atk/1_atk_7.png" id="8_gx2rj"]
+[ext_resource type="Texture2D" uid="uid://dxgc1jwo5tr8x" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/01_idle/idle_7.png" id="8_tr74d"]
+[ext_resource type="Texture2D" uid="uid://37pdhuo8pp7n" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/01_idle/idle_8.png" id="9_nkxr8"]
+[ext_resource type="Texture2D" uid="uid://0p58bn44ng2t" path="res://Assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/02_walk/walk_1.png" id="10_o5tns"]
+[ext_resource type="Texture2D" uid="uid://dp84v15spn0v3" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/05_j_down/j_down_1.png" id="10_ybgk3"]
+[ext_resource type="Texture2D" uid="uid://b0fhvrt8j7yhc" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/05_j_down/j_down_2.png" id="11_b2oli"]
+[ext_resource type="Texture2D" uid="uid://dl2jceyjv8ly8" path="res://Assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/02_walk/walk_2.png" id="11_rvs5w"]
+[ext_resource type="Texture2D" uid="uid://bfep2yatwy4vj" path="res://Assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/02_walk/walk_3.png" id="12_g141d"]
+[ext_resource type="Texture2D" uid="uid://da5u3srmhq5pb" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/05_j_down/j_down_3.png" id="12_lkus5"]
+[ext_resource type="Texture2D" uid="uid://bh4svcnuj7kh5" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/04_j_up/j_up_1.png" id="13_3eoox"]
+[ext_resource type="Texture2D" uid="uid://csqpece473nx5" path="res://Assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/02_walk/walk_4.png" id="13_rkbll"]
+[ext_resource type="Texture2D" uid="uid://bxr65ouylk46j" path="res://Assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/02_walk/walk_5.png" id="14_05q5l"]
+[ext_resource type="Texture2D" uid="uid://c2mmyxrsaw5q7" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/04_j_up/j_up_2.png" id="14_nwchw"]
+[ext_resource type="Texture2D" uid="uid://b8iu4fgxugy6i" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/04_j_up/j_up_3.png" id="15_2ij11"]
+[ext_resource type="Texture2D" uid="uid://damabqxp2v17k" path="res://Assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/02_walk/walk_6.png" id="15_nmrd5"]
+[ext_resource type="Texture2D" uid="uid://pxw7t3twchu2" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/02_walk/walk_7.png" id="16_wmtpq"]
+[ext_resource type="Texture2D" uid="uid://dpyuuwob1h3i2" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/02_walk/walk_8.png" id="17_65lku"]
+[ext_resource type="Texture2D" uid="uid://di23jbgpbbt5v" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/02_walk/walk_9.png" id="18_qe8hp"]
+[ext_resource type="Texture2D" uid="uid://chd1dcciag6hq" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/02_walk/walk_10.png" id="19_f22wa"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_sddni"]
-size = Vector2(18, 18)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_y1rhj"]
+radius = 8.5
+height = 35.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lihmk"]
+atlas = ExtResource("10_o5tns")
+region = Rect2(0, 0, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_whmj3"]
+atlas = ExtResource("11_rvs5w")
+region = Rect2(0, 0, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pyq71"]
+atlas = ExtResource("12_g141d")
+region = Rect2(0, 0, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2o4ym"]
+atlas = ExtResource("13_rkbll")
+region = Rect2(0, 0, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y01tt"]
+atlas = ExtResource("14_05q5l")
+region = Rect2(0, 0, 288, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0yak1"]
+atlas = ExtResource("15_nmrd5")
+region = Rect2(0, 0, 288, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xft0s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_n3ski")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_akyne")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_43qwl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_mhb51")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_xn126")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_8ukdn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_gx2rj")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_5jdcq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_v4kfo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_6yu3t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_pvxfd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_bt4lh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_45rax")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_tr74d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_nkxr8")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_ybgk3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_b2oli")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_lkus5")
+}],
+"loop": true,
+"name": &"jump_down",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_3eoox")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_nwchw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_2ij11")
+}],
+"loop": true,
+"name": &"jump_up",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lihmk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_whmj3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pyq71")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2o4ym")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y01tt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0yak1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_wmtpq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_65lku")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_qe8hp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_f22wa")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 10.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_b4rmp"]
+radius = 7.0
+height = 36.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_y6k58"]
+height = 36.0
+
+[sub_resource type="Animation" id="Animation_ik6sj"]
+resource_name = "attack"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CollisionShape2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.333333, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 45), Vector2(15, 45), Vector2(15, 45), Vector2(0, 45)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(7.45058e-09, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 2, 3, 4, 5, 6]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CollisionShape2D:shape")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [SubResource("CapsuleShape2D_b4rmp"), SubResource("CapsuleShape2D_y6k58")]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("WeaponCollision:disabled")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [true, false, true]
+}
+
+[sub_resource type="Animation" id="Animation_tom1k"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CollisionShape2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 45)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [6]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CollisionShape2D:shape")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [SubResource("CapsuleShape2D_y1rhj")]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("WeaponCollision:disabled")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_kwk0v"]
+_data = {
+"RESET": SubResource("Animation_tom1k"),
+"attack": SubResource("Animation_ik6sj")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_exaan"]
+size = Vector2(33, 6)
 
 [node name="Player2" type="CharacterBody2D"]
 collision_mask = 2
 script = ExtResource("1_65bwc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_sddni")
+position = Vector2(1, 45)
+shape = SubResource("CapsuleShape2D_y1rhj")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.140625, 0.140625)
-texture = ExtResource("2_42ikn")
-
-[node name="Label" type="Label" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-offset_left = -5.0
-offset_top = -29.0
-offset_right = 5.0
-offset_bottom = -6.0
-text = "2"
+sprite_frames = SubResource("SpriteFrames_xft0s")
+animation = &"attack"
+autoplay = "idle"
+frame = 6
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_kwk0v")
+}
+
+[node name="WeaponCollision" type="CollisionShape2D" parent="."]
+position = Vector2(40.5, 38)
+shape = SubResource("RectangleShape2D_exaan")
+disabled = true
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]

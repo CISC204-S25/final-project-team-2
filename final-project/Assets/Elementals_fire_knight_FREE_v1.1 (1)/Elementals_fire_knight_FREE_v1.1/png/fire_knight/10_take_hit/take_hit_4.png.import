@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bx5ktcfv2b60n"
-path="res://.godot/imported/take_hit_4.png-fbacc17741332ca4cd2416fc217ec06c.ctex"
+path="res://.godot/imported/take_hit_4.png-26aafdf3e782085c328889745a96a897.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/10_take_hit/take_hit_4.png"
-dest_files=["res://.godot/imported/take_hit_4.png-fbacc17741332ca4cd2416fc217ec06c.ctex"]
+source_file="res://assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/10_take_hit/take_hit_4.png"
+dest_files=["res://.godot/imported/take_hit_4.png-26aafdf3e782085c328889745a96a897.ctex"]
 
 [params]
 
