@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dxvn26t6vpc6b"]
 
-[ext_resource type="PackedScene" uid="uid://bg0ibqfwjlv4u" path="res://scenes/player1.tscn" id="1_4sje8"]
-[ext_resource type="PackedScene" uid="uid://b1q8owv3huuah" path="res://scenes/player2.tscn" id="1_wyb0p"]
+[ext_resource type="PackedScene" uid="uid://brnq33pb4h7yd" path="res://scenes/player1animated.tscn" id="1_g26ql"]
+[ext_resource type="PackedScene" uid="uid://0fi5t3mxu7w1" path="res://scenes/player2animated.tscn" id="2_r8q7j"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_twqhd"]
 size = Vector2(325, 20)
@@ -10,16 +10,17 @@ size = Vector2(325, 20)
 
 [node name="Player Movement Test" type="Node2D" parent="."]
 
-[node name="Player1" parent="Player Movement Test" instance=ExtResource("1_4sje8")]
-position = Vector2(22, 0)
+[node name="Player1" parent="Player Movement Test" instance=ExtResource("1_g26ql")]
+position = Vector2(27, -46)
 
-[node name="Player2" parent="Player Movement Test" instance=ExtResource("1_wyb0p")]
-position = Vector2(-19, 0)
+[node name="Player2" parent="Player Movement Test" instance=ExtResource("2_r8q7j")]
+position = Vector2(-72, -47)
 
 [node name="Camera2D" type="Camera2D" parent="Player Movement Test"]
 zoom = Vector2(2, 2)
 
 [node name="Environment" type="Node2D" parent="Player Movement Test"]
+position = Vector2(0, -1)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Player Movement Test/Environment"]
 position = Vector2(40, 20)

@@ -10,7 +10,7 @@ const PUSH_FORCE = 30
 const GRAVITY = 300
 const FALL_GRAVITY = 500
 
-@onready var sprite = $Sprite2D
+@onready var sprite = $AnimatedSprite2D
 
 func check_gravity(v):
 	if v.y < 0:
