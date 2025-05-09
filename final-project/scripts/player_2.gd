@@ -3,7 +3,7 @@ extends CharacterBody2D
 # Change these values for movement/jump speed
 const SPEED = 30.0
 const JUMP_VELOCITY = -150.0
-const ICE_SPEEDUP = 130
+const ICE_SPEEDUP = 150
 const ICE_SLOWDOWN = 15
 
 const PUSH_FORCE = 30
