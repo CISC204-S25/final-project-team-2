@@ -11,7 +11,6 @@ const GRAVITY = 300
 const FALL_GRAVITY = 200
 
 @onready var sprite = $AnimatedSprite2D
-@onready var animation = $AnimationPlayer
 
 var animationPlaying = true
 
@@ -56,6 +55,7 @@ func _physics_process(delta):
 				sprite.play("jump_down")
 	else:
 		sprite.play("attack")
+		#$AnimationPlayer.play("attack")
 		
 	if Input.is_action_just_pressed("p2_attack"):
 		animationPlaying = false
