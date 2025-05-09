@@ -1,8 +1,12 @@
 extends CharacterBody2D
 
 # Change these values for movement/jump speed
-const SPEED = 100.0
-const JUMP_VELOCITY = -320.0
+const SPEED = 30.0
+const JUMP_VELOCITY = -200.0
+const ICE_SPEEDUP = 120
+const ICE_SLOWDOWN = 7
+
+const PUSH_FORCE = 30
 const GRAVITY = 900
 const FALL_GRAVITY = 1500
 
@@ -35,11 +39,20 @@ func _physics_process(delta):
 	elif direction < 0:
 		sprite.flip_h = true
 
-	# Moving left and right.
-	if direction:
-		velocity.x = direction * SPEED
+	# Moving left and right with ice momentum
+	if direction: 
+		velocity.x = direction * (SPEED + ICE_SPEEDUP)
 	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
+		velocity.x = move_toward(velocity.x, 0, ICE_SLOWDOWN)
 
 	move_and_slide()
+	push_objects()
+	
+
+func push_objects():
+	for i in get_slide_collision_count():
+		var collision = get_slide_collision(i)
+		var collider = collision.get_collider()
+		if collider is RigidBody2D:
+			collider.apply_central_impulse(collision.get_normal() * -1 * PUSH_FORCE)
 	

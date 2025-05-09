@@ -3,9 +3,11 @@ extends CharacterBody2D
 # Change these values for movement/jump speed
 const SPEED = 100.0
 const JUMP_VELOCITY = -320.0
+const MAX_JUMPS = 2
+
+const PUSH_FORCE = 30
 const GRAVITY = 900
 const FALL_GRAVITY = 1500
-const MAX_JUMPS = 2
 
 var jumps = 2
 
@@ -50,4 +52,12 @@ func _physics_process(delta):
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+	push_objects()
 	
+
+func push_objects():
+	for i in get_slide_collision_count():
+		var collision = get_slide_collision(i)
+		var collider = collision.get_collider()
+		if collider is RigidBody2D:
+			collider.apply_central_impulse(collision.get_normal() * -1 * PUSH_FORCE)
