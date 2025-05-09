@@ -19,11 +19,86 @@ position = Vector2(-19, 0)
 [node name="Camera2D" type="Camera2D" parent="Player Movement Test"]
 zoom = Vector2(2, 2)
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Player Movement Test"]
-position = Vector2(0, 20)
+[node name="Environment" type="Node2D" parent="Player Movement Test"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Player Movement Test/Environment"]
+position = Vector2(40, 20)
 collision_layer = 2
 collision_mask = 3
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Player Movement Test/StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player Movement Test/Environment/StaticBody2D"]
 position = Vector2(0, 15)
 shape = SubResource("RectangleShape2D_twqhd")
+
+[node name="ColorRect" type="ColorRect" parent="Player Movement Test/Environment/StaticBody2D/CollisionShape2D"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -162.0
+offset_top = -10.0
+offset_right = 164.0
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="Player Movement Test/Environment"]
+position = Vector2(-187, -81)
+scale = Vector2(0.5, 0.5)
+collision_layer = 2
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player Movement Test/Environment/StaticBody2D2"]
+position = Vector2(0, 15)
+shape = SubResource("RectangleShape2D_twqhd")
+
+[node name="ColorRect" type="ColorRect" parent="Player Movement Test/Environment/StaticBody2D2/CollisionShape2D"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -163.0
+offset_top = -10.0
+offset_right = 163.0
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="Player Movement Test/Environment"]
+position = Vector2(353, -10)
+scale = Vector2(0.5, 0.5)
+collision_layer = 2
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player Movement Test/Environment/StaticBody2D3"]
+position = Vector2(0, 15)
+shape = SubResource("RectangleShape2D_twqhd")
+
+[node name="ColorRect" type="ColorRect" parent="Player Movement Test/Environment/StaticBody2D3/CollisionShape2D"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -163.0
+offset_top = -10.0
+offset_right = 163.0
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="Player Movement Test/Environment"]
+position = Vector2(-437, 20)
+collision_layer = 2
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player Movement Test/Environment/StaticBody2D4"]
+position = Vector2(0, 15)
+shape = SubResource("RectangleShape2D_twqhd")
+
+[node name="ColorRect" type="ColorRect" parent="Player Movement Test/Environment/StaticBody2D4/CollisionShape2D"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -163.0
+offset_top = -10.0
+offset_right = 163.0
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2

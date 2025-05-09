@@ -2,13 +2,13 @@ extends CharacterBody2D
 
 # Change these values for movement/jump speed
 const SPEED = 30.0
-const JUMP_VELOCITY = -200.0
-const ICE_SPEEDUP = 120
-const ICE_SLOWDOWN = 7
+const JUMP_VELOCITY = -150.0
+const ICE_SPEEDUP = 130
+const ICE_SLOWDOWN = 15
 
 const PUSH_FORCE = 30
-const GRAVITY = 900
-const FALL_GRAVITY = 1500
+const GRAVITY = 300
+const FALL_GRAVITY = 500
 
 @onready var sprite = $Sprite2D
 
