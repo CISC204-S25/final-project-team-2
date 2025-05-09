@@ -3,15 +3,24 @@
 [ext_resource type="Script" path="res://scripts/player_1.gd" id="1_vv1x5"]
 [ext_resource type="Texture2D" uid="uid://r8l6y05iaxsi" path="res://icon.svg" id="2_3qesp"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_dyp4d"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lq8fr"]
+size = Vector2(18, 18)
 
 [node name="Player1" type="CharacterBody2D"]
 collision_mask = 2
 script = ExtResource("1_vv1x5")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_dyp4d")
+shape = SubResource("RectangleShape2D_lq8fr")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.140625, 0.140625)
 texture = ExtResource("2_3qesp")
+
+[node name="Label" type="Label" parent="."]
+texture_filter = 1
+offset_left = -5.0
+offset_top = -29.0
+offset_right = 5.0
+offset_bottom = -6.0
+text = "1"

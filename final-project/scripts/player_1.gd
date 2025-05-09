@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 # Change these values for movement/jump speed
-const SPEED = 100.0
+const SPEED = 80.0
 const JUMP_VELOCITY = -320.0
 const MAX_JUMPS = 2
 
