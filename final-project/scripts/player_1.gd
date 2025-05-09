@@ -60,7 +60,12 @@ func _physics_process(delta):
 			else:
 				sprite.play("jump_down")
 	else:
-		sprite.play("attack")
+		if sprite.flip_h == false:
+			$AnimationPlayer.play("attack")
+			sprite.play("attack")
+		else:
+			$AnimationPlayer.play("attack_2")
+			sprite.play("attack")
 		
 	if Input.is_action_just_pressed("p1_attack"):
 		animationPlaying = false
@@ -85,3 +90,4 @@ func push_objects():
 
 func _on_animated_sprite_2d_animation_finished() -> void:
 	animationPlaying = true
+	$AnimationPlayer.stop()
