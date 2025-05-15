@@ -1,6 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://g3bygglkr1ep"]
+[gd_scene load_steps=6 format=3 uid="uid://dakjrd5aiduhm"]
 
-[ext_resource type="PackedScene" uid="uid://g8guaq24pvci" path="res://scenes/platform.tscn" id="3_6vkh3"]
+[ext_resource type="PackedScene" uid="uid://w1y6ch7mj38k" path="res://scenes/platform.tscn" id="3_6vkh3"]
 
 [sub_resource type="Animation" id="Animation_u48ue"]
 length = 0.001

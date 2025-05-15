@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://csauxlencq1jw"]
+[gd_scene load_steps=7 format=3 uid="uid://csauxlencq1jw"]
 
 [ext_resource type="PackedScene" uid="uid://c8ie0244cydb2" path="res://scenes/player1.tscn" id="1_jy7nq"]
 [ext_resource type="PackedScene" uid="uid://b6yqtnejqriff" path="res://scenes/player2.tscn" id="2_45bin"]
-[ext_resource type="PackedScene" uid="uid://g3bygglkr1ep" path="res://scenes/moving_platform_x.tscn" id="3_3r75q"]
-[ext_resource type="PackedScene" uid="uid://dmdm71sbt5ms0" path="res://scenes/moving_platform_y.tscn" id="3_7xhsk"]
+[ext_resource type="PackedScene" uid="uid://dakjrd5aiduhm" path="res://scenes/moving_platform_x.tscn" id="3_3r75q"]
+[ext_resource type="PackedScene" uid="uid://mvbwpqcpxnx5" path="res://scenes/moving_platform_y.tscn" id="3_7xhsk"]
+[ext_resource type="PackedScene" uid="uid://2hchougswgrv" path="res://scenes/coin.tscn" id="5_4r8tf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_twqhd"]
 size = Vector2(325, 20)
@@ -17,6 +18,7 @@ collision_mask = 1
 [node name="Player2" parent="." instance=ExtResource("2_45bin")]
 position = Vector2(77, -54)
 collision_mask = 1
+script = null
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(2, 2)
@@ -107,3 +109,6 @@ offset_right = 163.0
 offset_bottom = 10.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="Coin" parent="." instance=ExtResource("5_4r8tf")]
+position = Vector2(52, 3)

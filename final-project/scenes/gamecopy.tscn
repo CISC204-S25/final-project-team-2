@@ -1,11 +1,10 @@
-[gd_scene load_steps=19 format=4 uid="uid://dqhenpdxmgpqc"]
+[gd_scene load_steps=19 format=4 uid="uid://dxttmai61ycxn"]
 
 [ext_resource type="Texture2D" uid="uid://hingq11umdye" path="res://Assets/sprites/world_tileset.png" id="1_scj5p"]
-[ext_resource type="PackedScene" uid="uid://booksnr6n0s62" path="res://scenes/coin.tscn" id="2_p8mfd"]
-[ext_resource type="PackedScene" uid="uid://g8guaq24pvci" path="res://scenes/platform.tscn" id="3_cqioj"]
+[ext_resource type="PackedScene" uid="uid://2hchougswgrv" path="res://scenes/coin.tscn" id="2_p8mfd"]
+[ext_resource type="PackedScene" uid="uid://w1y6ch7mj38k" path="res://scenes/platform.tscn" id="3_cqioj"]
 [ext_resource type="FontFile" uid="uid://ce5dcdxr2t7fm" path="res://Assets/fonts/PixelOperator8.ttf" id="4_hqy35"]
 [ext_resource type="FontFile" uid="uid://r15an3snhgd0" path="res://Assets/fonts/PixelOperator8-Bold.ttf" id="5_4vtfd"]
-[ext_resource type="Script" path="res://scripts/game_manager.gd" id="6_w6g7x"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2mlf8"]
 texture = ExtResource("1_scj5p")
@@ -388,6 +387,23 @@ _data = {
 "UpDown": SubResource("Animation_erxjf")
 }
 
+[sub_resource type="GDScript" id="GDScript_6aco1"]
+script/source = "extends Node
+
+var coins = 0 
+
+
+
+
+func add_coin():
+	coins += 1
+	print(coins)
+
+	
+		
+	
+"
+
 [node name="Game" type="Node2D"]
 
 [node name="Background" type="TileMapLayer" parent="."]
@@ -490,4 +506,4 @@ uppercase = true
 
 [node name="GameManager" type="Node" parent="."]
 unique_name_in_owner = true
-script = ExtResource("6_w6g7x")
+script = SubResource("GDScript_6aco1")
