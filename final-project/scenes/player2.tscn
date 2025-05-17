@@ -16,25 +16,25 @@
 [ext_resource type="Texture2D" uid="uid://gi83551umqbj" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/07_1_atk/1_atk_7.png" id="8_gx2rj"]
 [ext_resource type="Texture2D" uid="uid://dxgc1jwo5tr8x" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/01_idle/idle_7.png" id="8_tr74d"]
 [ext_resource type="Texture2D" uid="uid://37pdhuo8pp7n" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/01_idle/idle_8.png" id="9_nkxr8"]
-[ext_resource type="Texture2D" uid="uid://0p58bn44ng2t" path="res://Assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/02_walk/walk_1.png" id="10_o5tns"]
+[ext_resource type="Texture2D" uid="uid://0p58bn44ng2t" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/02_walk/walk_1.png" id="10_o5tns"]
 [ext_resource type="Texture2D" uid="uid://dp84v15spn0v3" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/05_j_down/j_down_1.png" id="10_ybgk3"]
 [ext_resource type="Texture2D" uid="uid://b0fhvrt8j7yhc" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/05_j_down/j_down_2.png" id="11_b2oli"]
-[ext_resource type="Texture2D" uid="uid://dl2jceyjv8ly8" path="res://Assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/02_walk/walk_2.png" id="11_rvs5w"]
-[ext_resource type="Texture2D" uid="uid://bfep2yatwy4vj" path="res://Assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/02_walk/walk_3.png" id="12_g141d"]
+[ext_resource type="Texture2D" uid="uid://dl2jceyjv8ly8" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/02_walk/walk_2.png" id="11_rvs5w"]
+[ext_resource type="Texture2D" uid="uid://bfep2yatwy4vj" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/02_walk/walk_3.png" id="12_g141d"]
 [ext_resource type="Texture2D" uid="uid://da5u3srmhq5pb" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/05_j_down/j_down_3.png" id="12_lkus5"]
 [ext_resource type="Texture2D" uid="uid://bh4svcnuj7kh5" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/04_j_up/j_up_1.png" id="13_3eoox"]
-[ext_resource type="Texture2D" uid="uid://csqpece473nx5" path="res://Assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/02_walk/walk_4.png" id="13_rkbll"]
-[ext_resource type="Texture2D" uid="uid://bxr65ouylk46j" path="res://Assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/02_walk/walk_5.png" id="14_05q5l"]
+[ext_resource type="Texture2D" uid="uid://csqpece473nx5" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/02_walk/walk_4.png" id="13_rkbll"]
+[ext_resource type="Texture2D" uid="uid://bxr65ouylk46j" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/02_walk/walk_5.png" id="14_05q5l"]
 [ext_resource type="Texture2D" uid="uid://c2mmyxrsaw5q7" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/04_j_up/j_up_2.png" id="14_nwchw"]
 [ext_resource type="Texture2D" uid="uid://b8iu4fgxugy6i" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/04_j_up/j_up_3.png" id="15_2ij11"]
-[ext_resource type="Texture2D" uid="uid://damabqxp2v17k" path="res://Assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/02_walk/walk_6.png" id="15_nmrd5"]
+[ext_resource type="Texture2D" uid="uid://damabqxp2v17k" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/02_walk/walk_6.png" id="15_nmrd5"]
 [ext_resource type="Texture2D" uid="uid://pxw7t3twchu2" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/02_walk/walk_7.png" id="16_wmtpq"]
 [ext_resource type="Texture2D" uid="uid://dpyuuwob1h3i2" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/02_walk/walk_8.png" id="17_65lku"]
 [ext_resource type="Texture2D" uid="uid://di23jbgpbbt5v" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/02_walk/walk_9.png" id="18_qe8hp"]
 [ext_resource type="Texture2D" uid="uid://chd1dcciag6hq" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/02_walk/walk_10.png" id="19_f22wa"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_y6k58"]
-radius = 8.0
+radius = 9.0
 height = 36.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lihmk"]
@@ -182,6 +182,33 @@ animations = [{
 "speed": 10.0
 }]
 
+[sub_resource type="Animation" id="Animation_tom1k"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CollisionShape2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 45)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("WeaponCollision:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
 [sub_resource type="Animation" id="Animation_ik6sj"]
 resource_name = "attack"
 length = 0.7
@@ -208,33 +235,6 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
 "values": [true, false, true]
-}
-
-[sub_resource type="Animation" id="Animation_tom1k"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("CollisionShape2D:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1, 45)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("WeaponCollision:disabled")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
 }
 
 [sub_resource type="Animation" id="Animation_qkgue"]
@@ -286,9 +286,8 @@ shape = SubResource("CapsuleShape2D_y6k58")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_xft0s")
-animation = &"attack"
+animation = &"idle"
 autoplay = "idle"
-frame = 2
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
