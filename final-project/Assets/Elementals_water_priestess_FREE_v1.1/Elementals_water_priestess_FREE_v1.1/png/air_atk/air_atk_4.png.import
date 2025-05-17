@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://chsiw8tjmwx6j"
-path="res://.godot/imported/air_atk_4.png-bd9cd99f621e8d7ba3abbdffbc8a272d.ctex"
+path="res://.godot/imported/air_atk_4.png-220dd00a5ff765e3fe9fb19ce57e3a17.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/air_atk/air_atk_4.png"
-dest_files=["res://.godot/imported/air_atk_4.png-bd9cd99f621e8d7ba3abbdffbc8a272d.ctex"]
+source_file="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/air_atk/air_atk_4.png"
+dest_files=["res://.godot/imported/air_atk_4.png-220dd00a5ff765e3fe9fb19ce57e3a17.ctex"]
 
 [params]
 
