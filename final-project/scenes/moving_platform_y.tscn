@@ -1,6 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://8a760gtjb8mv"]
+[gd_scene load_steps=5 format=3 uid="uid://dupknbvqu1l5k"]
 
-[ext_resource type="PackedScene" uid="uid://cyqtmfup7au13" path="res://scenes/platform.tscn" id="3_md7kc"]
+[ext_resource type="PackedScene" uid="uid://bfxno3w35vmot" path="res://scenes/platform.tscn" id="3_md7kc"]
 
 [sub_resource type="Animation" id="Animation_hadsg"]
 length = 0.001
@@ -44,7 +44,6 @@ _data = {
 texture_filter = 1
 
 [node name="MovingPlatformY" parent="." instance=ExtResource("3_md7kc")]
-collision_layer = 2
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="MovingPlatformY"]
 libraries = {
