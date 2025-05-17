@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=4 uid="uid://dxttmai61ycxn"]
 
-[ext_resource type="Texture2D" uid="uid://hingq11umdye" path="res://Assets/sprites/world_tileset.png" id="1_scj5p"]
+[ext_resource type="Texture2D" uid="uid://hingq11umdye" path="res://assets/sprites/world_tileset.png" id="1_scj5p"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2mlf8"]
 texture = ExtResource("1_scj5p")
@@ -148,6 +148,7 @@ texture = ExtResource("1_scj5p")
 4:0/0 = 0
 4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 5:0/0 = 0
+5:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 6:0/0 = 0
 6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 7:0/0 = 0
@@ -297,7 +298,7 @@ texture = ExtResource("1_scj5p")
 2:4/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_iwhe6"]
-physics_layer_0/collision_layer = 1
+physics_layer_0/collision_layer = 2
 sources/0 = SubResource("TileSetAtlasSource_qyss6")
 
 [node name="Tileset" type="Node2D"]

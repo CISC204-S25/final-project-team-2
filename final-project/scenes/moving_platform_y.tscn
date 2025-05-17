@@ -41,8 +41,10 @@ _data = {
 }
 
 [node name="moving_platform_y" type="Node2D"]
+texture_filter = 1
 
 [node name="MovingPlatformY" parent="." instance=ExtResource("3_md7kc")]
+collision_layer = 2
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="MovingPlatformY"]
 libraries = {

@@ -1,8 +1,8 @@
 [gd_scene load_steps=21 format=3 uid="uid://2hchougswgrv"]
 
-[ext_resource type="Texture2D" uid="uid://cls2j1vw47s0b" path="res://Assets/sprites/coin.png" id="1_614r3"]
+[ext_resource type="Texture2D" uid="uid://cls2j1vw47s0b" path="res://assets/sprites/coin.png" id="1_614r3"]
 [ext_resource type="Script" path="res://scripts/coin.gd" id="1_im4ds"]
-[ext_resource type="AudioStream" uid="uid://b32wgfsa2i0mc" path="res://Assets/sounds/coin.wav" id="3_xw5b8"]
+[ext_resource type="AudioStream" uid="uid://b32wgfsa2i0mc" path="res://assets/sounds/coin.wav" id="3_xw5b8"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fd340"]
 atlas = ExtResource("1_614r3")
@@ -198,9 +198,11 @@ _data = {
 }
 
 [node name="Coin" type="Area2D"]
+collision_layer = 2
 script = ExtResource("1_im4ds")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_4u3f7")
 animation = &"coin"
 autoplay = "coin"
