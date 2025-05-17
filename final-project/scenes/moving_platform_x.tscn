@@ -1,0 +1,56 @@
+[gd_scene load_steps=6 format=3 uid="uid://bkcfwi1ch71xi"]
+
+[ext_resource type="PackedScene" uid="uid://bfxno3w35vmot" path="res://scenes/platform.tscn" id="3_6vkh3"]
+
+[sub_resource type="Animation" id="Animation_u48ue"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_c3av6"]
+resource_name = "SideToSide"
+loop_mode = 2
+
+[sub_resource type="Animation" id="Animation_f7jbs"]
+resource_name = "side_to_side"
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(100, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xnc6w"]
+_data = {
+"RESET": SubResource("Animation_u48ue"),
+"SideToSide": SubResource("Animation_c3av6"),
+"side_to_side": SubResource("Animation_f7jbs")
+}
+
+[node name="moving_platform_y" type="Node2D"]
+texture_filter = 1
+
+[node name="moving_platform_y" parent="." instance=ExtResource("3_6vkh3")]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="moving_platform_y"]
+libraries = {
+"": SubResource("AnimationLibrary_xnc6w")
+}
+autoplay = "side_to_side"

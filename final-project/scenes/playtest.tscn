@@ -1,21 +1,25 @@
-[gd_scene load_steps=4 format=3 uid="uid://csauxlencq1jw"]
+[gd_scene load_steps=5 format=3 uid="uid://duytfqc18m7ds"]
 
 [ext_resource type="PackedScene" uid="uid://c8ie0244cydb2" path="res://scenes/player1.tscn" id="1_jy7nq"]
 [ext_resource type="PackedScene" uid="uid://b6yqtnejqriff" path="res://scenes/player2.tscn" id="2_45bin"]
+[ext_resource type="Script" path="res://scripts/camera.gd" id="3_kx32m"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_twqhd"]
 size = Vector2(325, 20)
 
 [node name="Player Movement Test" type="Node2D"]
 
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
+script = ExtResource("3_kx32m")
+
 [node name="Player1" parent="." instance=ExtResource("1_jy7nq")]
+unique_name_in_owner = true
 position = Vector2(-54, -48)
 
 [node name="Player2" parent="." instance=ExtResource("2_45bin")]
+unique_name_in_owner = true
 position = Vector2(77, -54)
-
-[node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(2, 2)
 
 [node name="Environment" type="Node2D" parent="."]
 position = Vector2(0, -1)

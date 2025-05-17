@@ -1,0 +1,52 @@
+[gd_scene load_steps=5 format=3 uid="uid://dupknbvqu1l5k"]
+
+[ext_resource type="PackedScene" uid="uid://bfxno3w35vmot" path="res://scenes/platform.tscn" id="3_md7kc"]
+
+[sub_resource type="Animation" id="Animation_hadsg"]
+length = 0.001
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_a1r2t"]
+resource_name = "updown"
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -100)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_5juht"]
+_data = {
+"RESET": SubResource("Animation_hadsg"),
+"updown": SubResource("Animation_a1r2t")
+}
+
+[node name="moving_platform_y" type="Node2D"]
+texture_filter = 1
+
+[node name="MovingPlatformY" parent="." instance=ExtResource("3_md7kc")]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="MovingPlatformY"]
+libraries = {
+"": SubResource("AnimationLibrary_5juht")
+}
+autoplay = "updown"
