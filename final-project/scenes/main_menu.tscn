@@ -53,7 +53,7 @@ text = "Options"
 layout_mode = 2
 text = "Quit"
 
-[node name="Label" type="Label" parent="CanvasLayer/Control"]
+[node name="Title" type="Label" parent="CanvasLayer/Control"]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
