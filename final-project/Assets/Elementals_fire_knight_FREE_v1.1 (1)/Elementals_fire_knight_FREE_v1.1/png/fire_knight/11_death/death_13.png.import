@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://buprlykolaktt"
-path="res://.godot/imported/death_13.png-16f0a12f4ea1e36885b13769e55267fa.ctex"
+path="res://.godot/imported/death_13.png-603b31e5998522f16434326d60c2de3b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/11_death/death_13.png"
-dest_files=["res://.godot/imported/death_13.png-16f0a12f4ea1e36885b13769e55267fa.ctex"]
+source_file="res://Assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/11_death/death_13.png"
+dest_files=["res://.godot/imported/death_13.png-603b31e5998522f16434326d60c2de3b.ctex"]
 
 [params]
 

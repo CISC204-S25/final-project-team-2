@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://j1ddmtlbvljk"
-path="res://.godot/imported/sp_atk_2.png-af3ce2abaca79fb1fdd321e90d3b051c.ctex"
+path="res://.godot/imported/sp_atk_2.png-384a4e79b4dc1f725302cc96034ef572.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/08_sp_atk/sp_atk_2.png"
-dest_files=["res://.godot/imported/sp_atk_2.png-af3ce2abaca79fb1fdd321e90d3b051c.ctex"]
+source_file="res://Assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/08_sp_atk/sp_atk_2.png"
+dest_files=["res://.godot/imported/sp_atk_2.png-384a4e79b4dc1f725302cc96034ef572.ctex"]
 
 [params]
 

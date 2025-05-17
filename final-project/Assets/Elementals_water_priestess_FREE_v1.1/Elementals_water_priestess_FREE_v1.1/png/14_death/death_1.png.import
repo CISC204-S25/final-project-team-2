@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dg5j0xiyxbumy"
-path="res://.godot/imported/death_1.png-a5aa99c31cf1a185ab280267aaa889ab.ctex"
+path="res://.godot/imported/death_1.png-234a073be8d638929db13c32bd937287.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/14_death/death_1.png"
-dest_files=["res://.godot/imported/death_1.png-a5aa99c31cf1a185ab280267aaa889ab.ctex"]
+source_file="res://Assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/14_death/death_1.png"
+dest_files=["res://.godot/imported/death_1.png-234a073be8d638929db13c32bd937287.ctex"]
 
 [params]
 

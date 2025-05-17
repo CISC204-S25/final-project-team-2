@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://37pdhuo8pp7n"
-path="res://.godot/imported/idle_8.png-56c9c589c77599c7fdb558b99ec0847f.ctex"
+path="res://.godot/imported/idle_8.png-7f22d4392a1c1297a0ddb1a7b049589d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/01_idle/idle_8.png"
-dest_files=["res://.godot/imported/idle_8.png-56c9c589c77599c7fdb558b99ec0847f.ctex"]
+source_file="res://Assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/01_idle/idle_8.png"
+dest_files=["res://.godot/imported/idle_8.png-7f22d4392a1c1297a0ddb1a7b049589d.ctex"]
 
 [params]
 

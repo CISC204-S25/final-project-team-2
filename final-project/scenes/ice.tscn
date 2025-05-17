@@ -1,8 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://deauvbxl1aapx"]
+[gd_scene load_steps=5 format=3 uid="uid://73ktmllhj5qg"]
 
-[ext_resource type="Texture2D" uid="uid://b1fkcihr0t52j" path="res://Assets/free-winter-holiday-game-backgrounds (1)/PNG/BG_01/BG_01.png" id="1_aflgp"]
-[ext_resource type="PackedScene" uid="uid://bg0ibqfwjlv4u" path="res://scenes/player1.tscn" id="2_74uu0"]
-[ext_resource type="PackedScene" uid="uid://b1q8owv3huuah" path="res://scenes/player2.tscn" id="3_poxn8"]
+[ext_resource type="Texture2D" path="res://Assets/free-winter-holiday-game-backgrounds (1)/PNG/BG_01/BG_01.png" id="1_aflgp"]
+[ext_resource type="PackedScene" uid="uid://c8ie0244cydb2" path="res://scenes/player1.tscn" id="2_74uu0"]
+[ext_resource type="PackedScene" uid="uid://b6yqtnejqriff" path="res://scenes/player2.tscn" id="3_poxn8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_30s8j"]
 size = Vector2(1921, 90.5)

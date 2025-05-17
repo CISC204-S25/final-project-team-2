@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dtsth8oih3kk6"
-path="res://.godot/imported/surf_6.png-b57a0bdbe76d35d2201399aa181773be.ctex"
+path="res://.godot/imported/surf_6.png-467c29085336ba73f02b0a75daa8e3a0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/03_surf/surf_6.png"
-dest_files=["res://.godot/imported/surf_6.png-b57a0bdbe76d35d2201399aa181773be.ctex"]
+source_file="res://Assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/03_surf/surf_6.png"
+dest_files=["res://.godot/imported/surf_6.png-467c29085336ba73f02b0a75daa8e3a0.ctex"]
 
 [params]
 
