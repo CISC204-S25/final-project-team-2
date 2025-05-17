@@ -1,4 +1,86 @@
-[gd_scene format=3 uid="uid://cu5onq87xwqh7"]
+[gd_scene load_steps=20 format=3 uid="uid://cu5onq87xwqh7"]
+
+[ext_resource type="FontFile" uid="uid://ce5dcdxr2t7fm" path="res://assets/fonts/PixelOperator8.ttf" id="1_1c6md"]
+[ext_resource type="Texture2D" uid="uid://d2gvw5m8cjhd8" path="res://assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/01_idle/idle_1.png" id="2_we4db"]
+[ext_resource type="Texture2D" uid="uid://bjma3ade3mj73" path="res://assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/01_idle/idle_2.png" id="3_2kaui"]
+[ext_resource type="Texture2D" uid="uid://tl7pcpb7eguj" path="res://assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/01_idle/idle_3.png" id="4_fip6o"]
+[ext_resource type="Texture2D" uid="uid://d3wankikte35t" path="res://assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/01_idle/idle_4.png" id="5_7ib4n"]
+[ext_resource type="Texture2D" uid="uid://n0dfprhdgu5r" path="res://assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/01_idle/idle_5.png" id="6_qekjv"]
+[ext_resource type="Texture2D" uid="uid://bbknvjdv2vuop" path="res://assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/01_idle/idle_6.png" id="7_cdt4w"]
+[ext_resource type="Texture2D" uid="uid://bpdy48d6hekmu" path="res://assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/01_idle/idle_7.png" id="8_6452h"]
+[ext_resource type="Texture2D" uid="uid://cuvni3lnalm0y" path="res://assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/01_idle/idle_8.png" id="9_fmk7m"]
+[ext_resource type="Texture2D" uid="uid://cdhv63jurkggp" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/01_idle/idle_1.png" id="10_hs5wa"]
+[ext_resource type="Texture2D" uid="uid://d01g7p82f4fo6" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/01_idle/idle_2.png" id="11_0bu6l"]
+[ext_resource type="Texture2D" uid="uid://c83rycjm6pbse" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/01_idle/idle_3.png" id="12_d1a23"]
+[ext_resource type="Texture2D" uid="uid://b2ld6h8x6p6kl" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/01_idle/idle_4.png" id="13_tnjb0"]
+[ext_resource type="Texture2D" uid="uid://c3onrbdqrgeav" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/01_idle/idle_5.png" id="14_w3pwm"]
+[ext_resource type="Texture2D" uid="uid://cb1bl1aj6rrnl" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/01_idle/idle_6.png" id="15_vc2j6"]
+[ext_resource type="Texture2D" uid="uid://dxgc1jwo5tr8x" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/01_idle/idle_7.png" id="16_sygwt"]
+[ext_resource type="Texture2D" uid="uid://37pdhuo8pp7n" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/01_idle/idle_8.png" id="17_3ln8j"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ju8lr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_we4db")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_2kaui")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_fip6o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_7ib4n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_qekjv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_cdt4w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_6452h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_fmk7m")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_n07ct"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_hs5wa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_0bu6l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_d1a23")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_tnjb0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_w3pwm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_vc2j6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_sygwt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_3ln8j")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
 
 [node name="Main Menu" type="Control"]
 layout_mode = 3
@@ -42,26 +124,55 @@ grow_vertical = 2
 theme_override_constants/separation = 40
 
 [node name="Play" type="Button" parent="CanvasLayer/Control/VBoxContainer"]
+texture_filter = 1
 layout_mode = 2
+theme_override_fonts/font = ExtResource("1_1c6md")
+theme_override_font_sizes/font_size = 24
 text = "Play"
 
 [node name="Options" type="Button" parent="CanvasLayer/Control/VBoxContainer"]
+texture_filter = 1
 layout_mode = 2
+theme_override_fonts/font = ExtResource("1_1c6md")
+theme_override_font_sizes/font_size = 24
 text = "Options"
 
 [node name="Quit" type="Button" parent="CanvasLayer/Control/VBoxContainer"]
+texture_filter = 1
 layout_mode = 2
+theme_override_fonts/font = ExtResource("1_1c6md")
+theme_override_font_sizes/font_size = 24
 text = "Quit"
 
 [node name="Title" type="Label" parent="CanvasLayer/Control"]
+texture_filter = 1
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -195.0
-offset_top = 4.0
-offset_right = 196.0
-offset_bottom = 111.0
+offset_left = -223.5
+offset_top = 129.0
+offset_right = 224.5
+offset_bottom = 236.0
 grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_1c6md")
+theme_override_font_sizes/font_size = 72
 text = "Game Title"
 horizontal_alignment = 1
+
+[node name="P1" type="AnimatedSprite2D" parent="CanvasLayer/Control"]
+texture_filter = 1
+position = Vector2(226, 183)
+scale = Vector2(5, 5)
+sprite_frames = SubResource("SpriteFrames_ju8lr")
+autoplay = "default"
+frame_progress = 0.634016
+
+[node name="P2" type="AnimatedSprite2D" parent="CanvasLayer/Control"]
+texture_filter = 1
+position = Vector2(923, 182)
+scale = Vector2(5, 5)
+sprite_frames = SubResource("SpriteFrames_n07ct")
+autoplay = "default"
+frame_progress = 0.00676344
+flip_h = true
