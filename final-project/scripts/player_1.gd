@@ -12,6 +12,7 @@ const FALL_GRAVITY = 1500
 var jumps = 2
 
 @onready var sprite = $AnimatedSprite2D
+@onready var jumpSound = $JumpSound
 
 var animationPlaying = true
 
@@ -33,6 +34,7 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("p1_jump") and jumps > 1:
 		velocity.y = JUMP_VELOCITY
 		jumps -= 1
+		jumpSound.play()
 	
 	# Resets jump counter
 	if is_on_floor():

@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=3 uid="uid://c8ie0244cydb2"]
+[gd_scene load_steps=42 format=3 uid="uid://c8ie0244cydb2"]
 
 [ext_resource type="Script" path="res://scripts/player_1.gd" id="1_vv1x5"]
 [ext_resource type="Texture2D" uid="uid://d2gvw5m8cjhd8" path="res://assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/01_idle/idle_1.png" id="2_1d6pt"]
@@ -24,6 +24,7 @@
 [ext_resource type="Texture2D" uid="uid://b6e407rrx3rem" path="res://assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/03_jump_down/jump_down_1.png" id="30_o4o3b"]
 [ext_resource type="Texture2D" uid="uid://bj8w5xe8j4pwl" path="res://assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/03_jump_down/jump_down_2.png" id="31_3t07q"]
 [ext_resource type="Texture2D" uid="uid://b65hvlb003otv" path="res://assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/03_jump_down/jump_down_3.png" id="32_glugj"]
+[ext_resource type="AudioStream" uid="uid://bnpxsp31hx8bi" path="res://assets/sounds/jump.wav" id="33_uoyny"]
 [ext_resource type="Texture2D" uid="uid://b5j081a7i186c" path="res://assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/02_run/run_1.png" id="36_onas3"]
 [ext_resource type="Texture2D" uid="uid://xmd6d6csurko" path="res://assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/02_run/run_2.png" id="37_2e6ig"]
 [ext_resource type="Texture2D" uid="uid://xkw7bcoe3nve" path="res://assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/02_run/run_3.png" id="38_x4bv4"]
@@ -384,5 +385,9 @@ libraries = {
 position = Vector2(5, 10)
 shape = SubResource("RectangleShape2D_aanub")
 disabled = true
+
+[node name="JumpSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("33_uoyny")
+volume_db = -20.0
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
