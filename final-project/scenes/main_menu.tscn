@@ -1,6 +1,7 @@
-[gd_scene load_steps=20 format=3 uid="uid://cu5onq87xwqh7"]
+[gd_scene load_steps=21 format=3 uid="uid://cu5onq87xwqh7"]
 
 [ext_resource type="FontFile" uid="uid://ce5dcdxr2t7fm" path="res://assets/fonts/PixelOperator8.ttf" id="1_1c6md"]
+[ext_resource type="Script" path="res://scripts/main_menu.gd" id="1_3jqvn"]
 [ext_resource type="Texture2D" uid="uid://d2gvw5m8cjhd8" path="res://assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/01_idle/idle_1.png" id="2_we4db"]
 [ext_resource type="Texture2D" uid="uid://bjma3ade3mj73" path="res://assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/01_idle/idle_2.png" id="3_2kaui"]
 [ext_resource type="Texture2D" uid="uid://tl7pcpb7eguj" path="res://assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/01_idle/idle_3.png" id="4_fip6o"]
@@ -89,6 +90,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_3jqvn")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -107,7 +109,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(1, 1, 1, 0.196078)
+color = Color(0, 0, 0, 0.145098)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Control"]
 layout_mode = 1
@@ -125,6 +127,7 @@ theme_override_constants/separation = 40
 
 [node name="Play" type="Button" parent="CanvasLayer/Control/VBoxContainer"]
 texture_filter = 1
+custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
 theme_override_fonts/font = ExtResource("1_1c6md")
 theme_override_font_sizes/font_size = 24
@@ -132,6 +135,7 @@ text = "Play"
 
 [node name="Options" type="Button" parent="CanvasLayer/Control/VBoxContainer"]
 texture_filter = 1
+custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
 theme_override_fonts/font = ExtResource("1_1c6md")
 theme_override_font_sizes/font_size = 24
@@ -139,6 +143,7 @@ text = "Options"
 
 [node name="Quit" type="Button" parent="CanvasLayer/Control/VBoxContainer"]
 texture_filter = 1
+custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
 theme_override_fonts/font = ExtResource("1_1c6md")
 theme_override_font_sizes/font_size = 24
@@ -176,3 +181,7 @@ sprite_frames = SubResource("SpriteFrames_n07ct")
 autoplay = "default"
 frame_progress = 0.00676344
 flip_h = true
+
+[connection signal="pressed" from="CanvasLayer/Control/VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/VBoxContainer/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
