@@ -11,6 +11,7 @@ const GRAVITY = 300
 const FALL_GRAVITY = 200
 
 @onready var sprite = $AnimatedSprite2D
+@onready var jumpSound = $JumpSound
 
 var animationPlaying = true
 
@@ -31,6 +32,7 @@ func _physics_process(delta):
 	# Handle jump.
 	if Input.is_action_just_pressed("p2_jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
+		jumpSound.play()
 
 	# Get the input direction and handle the movement/deceleration.
 	var direction = Input.get_axis("p2_left", "p2_right")

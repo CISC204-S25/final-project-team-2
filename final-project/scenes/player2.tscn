@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=3 uid="uid://b6yqtnejqriff"]
+[gd_scene load_steps=47 format=3 uid="uid://b6yqtnejqriff"]
 
 [ext_resource type="Script" path="res://scripts/player_2.gd" id="1_65bwc"]
 [ext_resource type="Texture2D" uid="uid://cdhv63jurkggp" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/01_idle/idle_1.png" id="2_5jdcq"]
@@ -32,6 +32,7 @@
 [ext_resource type="Texture2D" uid="uid://dpyuuwob1h3i2" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/02_walk/walk_8.png" id="17_65lku"]
 [ext_resource type="Texture2D" uid="uid://di23jbgpbbt5v" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/02_walk/walk_9.png" id="18_qe8hp"]
 [ext_resource type="Texture2D" uid="uid://chd1dcciag6hq" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/02_walk/walk_10.png" id="19_f22wa"]
+[ext_resource type="AudioStream" uid="uid://bnpxsp31hx8bi" path="res://assets/sounds/jump.wav" id="33_ewvc8"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_y6k58"]
 radius = 9.0
@@ -298,5 +299,9 @@ libraries = {
 position = Vector2(39.5, 38)
 shape = SubResource("RectangleShape2D_exaan")
 disabled = true
+
+[node name="JumpSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("33_ewvc8")
+volume_db = -20.0
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
