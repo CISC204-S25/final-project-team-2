@@ -1,14 +1,15 @@
 [gd_scene load_steps=4 format=3 uid="uid://dxvn26t6vpc6b"]
 
-[ext_resource type="PackedScene" uid="uid://duytfqc18m7ds" path="res://scenes/playtest.tscn" id="1_gbeu7"]
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_q04r4"]
 [ext_resource type="AudioStream" uid="uid://dxcgid61e0hhr" path="res://assets/music/time_for_adventure.mp3" id="2_0wv5d"]
+[ext_resource type="PackedScene" uid="uid://cu5onq87xwqh7" path="res://scenes/main_menu.tscn" id="3_cg83v"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_q04r4")
 
-[node name="Player Movement Test" parent="." instance=ExtResource("1_gbeu7")]
-
-[node name="BackgroundMusic" type="AudioStreamPlayer2D" parent="."]
+[node name="MainMenuMusic" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("2_0wv5d")
 volume_db = -20.0
+parameters/looping = true
+
+[node name="Main Menu" parent="." instance=ExtResource("3_cg83v")]
