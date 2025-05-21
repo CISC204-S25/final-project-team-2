@@ -5,7 +5,7 @@ extends Camera2D
 
 const MAX_DISTANCE = 500
 const MIN_DISTANCE = 1
-const MAX_ZOOM = 3.0
+const MAX_ZOOM = 2.0
 const MIN_ZOOM = 1.5
 const FOLLOW_SPEED = 0.5
 const ZOOM_SENSITIVITY = 5.0
@@ -13,7 +13,8 @@ const ZOOM_SENSITIVITY = 5.0
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	# x and y positioning
-	self.global_position = average(p1.global_position, p2.global_position)
+	self.position.x = average(p1.position.x, p2.position.x)
+	self.position.y = average(p1.position.y + 20, p2.position.y + 20)
 	
 	# changing zoom based on distance between players
 	var distance = p1.global_position.distance_to(p2.global_position)
