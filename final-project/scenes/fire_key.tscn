@@ -137,7 +137,7 @@ texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_4u3f7")
 animation = &"fire_key"
 autoplay = "fire_key"
-frame_progress = 0.944111
+frame_progress = 0.162763
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_5vo3j")

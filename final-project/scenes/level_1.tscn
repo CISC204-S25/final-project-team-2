@@ -8,8 +8,8 @@
 [ext_resource type="PackedScene" path="res://scenes/goal.tscn" id="5_33dsf"]
 [ext_resource type="PackedScene" uid="uid://bfxno3w35vmot" path="res://scenes/platform.tscn" id="6_1c50h"]
 [ext_resource type="PackedScene" path="res://scenes/world_border.tscn" id="7_v54d3"]
-[ext_resource type="PackedScene" path="res://scenes/victory.tscn" id="9_dxnr4"]
-[ext_resource type="PackedScene" path="res://scenes/death.tscn" id="10_3rdui"]
+[ext_resource type="PackedScene" uid="uid://ctckyvkey2lv4" path="res://scenes/victory.tscn" id="9_dxnr4"]
+[ext_resource type="PackedScene" uid="uid://cjasexnaf3hfy" path="res://scenes/death.tscn" id="10_3rdui"]
 [ext_resource type="PackedScene" uid="uid://bsteetja1gmwh" path="res://scenes/fire_key.tscn" id="11_34bbh"]
 [ext_resource type="PackedScene" uid="uid://t1heoheu4ckg" path="res://scenes/ice_key.tscn" id="12_aqpoj"]
 

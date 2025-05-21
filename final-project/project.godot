@@ -17,8 +17,8 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-Options="*res://scripts/options.gd"
 ControlsManager="*res://scripts/controls_manager.gd"
+Options="*res://scripts/options.gd"
 
 [display]
 
