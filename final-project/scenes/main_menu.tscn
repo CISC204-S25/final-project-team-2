@@ -155,14 +155,15 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -223.5
-offset_top = 129.0
-offset_right = 224.5
-offset_bottom = 236.0
+offset_left = -269.5
+offset_top = 79.0
+offset_right = 270.5
+offset_bottom = 226.0
 grow_horizontal = 2
 theme_override_fonts/font = ExtResource("1_1c6md")
 theme_override_font_sizes/font_size = 72
-text = "Game Title"
+text = "Elemental
+Warriors"
 horizontal_alignment = 1
 
 [node name="P1" type="AnimatedSprite2D" parent="CanvasLayer/Control"]

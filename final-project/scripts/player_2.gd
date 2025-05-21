@@ -2,9 +2,9 @@ extends CharacterBody2D
 
 # Change these values for movement/jump speed
 const SPEED = 50.0
-const JUMP_VELOCITY = -100.0
+const JUMP_VELOCITY = -150.0
 const ICE_SPEEDUP = 150
-const ICE_SLOWDOWN = 10
+const ICE_SLOWDOWN = 15
 
 const PUSH_FORCE = 30
 const GRAVITY = 300
@@ -14,6 +14,7 @@ const FALL_GRAVITY = 200
 @onready var jumpSound = $JumpSound
 
 var animationPlaying = true
+@export var inExit = false
 
 func check_gravity(v):
 	if v.y < 0:

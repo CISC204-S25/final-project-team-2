@@ -10,6 +10,7 @@ const GRAVITY = 900
 const FALL_GRAVITY = 1500
 
 var jumps = 2
+@export var inExit = false
 
 @onready var sprite = $AnimatedSprite2D
 @onready var jumpSound = $JumpSound
