@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bqqlayu1cpoqo"
-path="res://.godot/imported/roll_7.png-e8fa2e08c0ef347b6c68d288cbbdc84b.ctex"
+path="res://.godot/imported/roll_7.png-d55c150a31bf46dad5dc0eb8362efc4b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/04_roll/roll_7.png"
-dest_files=["res://.godot/imported/roll_7.png-e8fa2e08c0ef347b6c68d288cbbdc84b.ctex"]
+source_file="res://Assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/04_roll/roll_7.png"
+dest_files=["res://.godot/imported/roll_7.png-d55c150a31bf46dad5dc0eb8362efc4b.ctex"]
 
 [params]
 

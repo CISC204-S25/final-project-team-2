@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cycqneods82jy"
-path="res://.godot/imported/defend_2.png-0e54f0076005d295c4f7bb59a93f08cf.ctex"
+path="res://.godot/imported/defend_2.png-fc2c2cebc9399b2c1463e69cf8a1381a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/09_defend/defend_2.png"
-dest_files=["res://.godot/imported/defend_2.png-0e54f0076005d295c4f7bb59a93f08cf.ctex"]
+source_file="res://Assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/09_defend/defend_2.png"
+dest_files=["res://.godot/imported/defend_2.png-fc2c2cebc9399b2c1463e69cf8a1381a.ctex"]
 
 [params]
 

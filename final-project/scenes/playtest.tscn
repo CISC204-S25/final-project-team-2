@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://c8ie0244cydb2" path="res://scenes/player1.tscn" id="1_jy7nq"]
 [ext_resource type="PackedScene" uid="uid://b6yqtnejqriff" path="res://scenes/player2.tscn" id="2_45bin"]
 [ext_resource type="Script" path="res://scripts/camera.gd" id="3_kx32m"]
-[ext_resource type="AudioStream" uid="uid://dxcgid61e0hhr" path="res://assets/music/time_for_adventure.mp3" id="5_sibj0"]
+[ext_resource type="AudioStream" uid="uid://dxcgid61e0hhr" path="res://Assets/music/time_for_adventure.mp3" id="5_sibj0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_twqhd"]
 size = Vector2(325, 20)
