@@ -1,0 +1,256 @@
+[gd_scene load_steps=22 format=3 uid="uid://681l863phhee"]
+
+[ext_resource type="AudioStream" uid="uid://dxcgid61e0hhr" path="res://Assets/music/time_for_adventure.mp3" id="1_b1xj3"]
+[ext_resource type="Script" path="res://scripts/options.gd" id="1_iwanh"]
+[ext_resource type="FontFile" uid="uid://ce5dcdxr2t7fm" path="res://Assets/fonts/PixelOperator8.ttf" id="2_rplur"]
+[ext_resource type="Texture2D" uid="uid://d2gvw5m8cjhd8" path="res://Assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/01_idle/idle_1.png" id="3_8tecr"]
+[ext_resource type="Texture2D" uid="uid://bjma3ade3mj73" path="res://Assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/01_idle/idle_2.png" id="4_qpkmo"]
+[ext_resource type="Texture2D" uid="uid://tl7pcpb7eguj" path="res://Assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/01_idle/idle_3.png" id="5_hyynr"]
+[ext_resource type="Texture2D" uid="uid://d3wankikte35t" path="res://Assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/01_idle/idle_4.png" id="6_sqdxw"]
+[ext_resource type="Texture2D" uid="uid://n0dfprhdgu5r" path="res://Assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/01_idle/idle_5.png" id="7_7dpvc"]
+[ext_resource type="Texture2D" uid="uid://bbknvjdv2vuop" path="res://Assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/01_idle/idle_6.png" id="8_fxukw"]
+[ext_resource type="Texture2D" uid="uid://bpdy48d6hekmu" path="res://Assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/01_idle/idle_7.png" id="9_3pcbr"]
+[ext_resource type="Texture2D" uid="uid://cuvni3lnalm0y" path="res://Assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/01_idle/idle_8.png" id="10_na0qb"]
+[ext_resource type="Texture2D" uid="uid://cdhv63jurkggp" path="res://Assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/01_idle/idle_1.png" id="11_7d8w3"]
+[ext_resource type="Texture2D" uid="uid://d01g7p82f4fo6" path="res://Assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/01_idle/idle_2.png" id="12_4g5jo"]
+[ext_resource type="Texture2D" uid="uid://c83rycjm6pbse" path="res://Assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/01_idle/idle_3.png" id="13_ibqti"]
+[ext_resource type="Texture2D" uid="uid://b2ld6h8x6p6kl" path="res://Assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/01_idle/idle_4.png" id="14_llu0i"]
+[ext_resource type="Texture2D" uid="uid://c3onrbdqrgeav" path="res://Assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/01_idle/idle_5.png" id="15_plr07"]
+[ext_resource type="Texture2D" uid="uid://cb1bl1aj6rrnl" path="res://Assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/01_idle/idle_6.png" id="16_er6bv"]
+[ext_resource type="Texture2D" uid="uid://dxgc1jwo5tr8x" path="res://Assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/01_idle/idle_7.png" id="17_skcfa"]
+[ext_resource type="Texture2D" uid="uid://37pdhuo8pp7n" path="res://Assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/01_idle/idle_8.png" id="18_52xxm"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m23xs"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_8tecr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_qpkmo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_hyynr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_sqdxw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_7dpvc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_fxukw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_3pcbr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_na0qb")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hmukn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_7d8w3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_4g5jo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ibqti")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_llu0i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_plr07")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_er6bv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_skcfa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_52xxm")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="Options" type="Node2D"]
+script = ExtResource("1_iwanh")
+
+[node name="MainMenuMusic" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1_b1xj3")
+volume_db = -20.0
+parameters/looping = true
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.145098)
+
+[node name="Options instructions" type="Label" parent="Control"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -494.0
+offset_top = 15.0
+offset_right = 1657.0
+offset_bottom = 162.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_rplur")
+theme_override_font_sizes/font_size = 25
+text = "Type in
+  \"CONTROLLER\", \"ARROWS\" OR \"WASD\"
+ to pick a control scheme"
+horizontal_alignment = 1
+
+[node name="P1 label" type="Label" parent="Control"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -837.0
+offset_top = 236.0
+offset_right = 1314.0
+offset_bottom = 383.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_rplur")
+theme_override_font_sizes/font_size = 25
+text = "P1"
+horizontal_alignment = 1
+
+[node name="P2 label" type="Label" parent="Control"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -155.0
+offset_top = 276.0
+offset_right = 1996.0
+offset_bottom = 423.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_rplur")
+theme_override_font_sizes/font_size = 25
+text = "P2"
+horizontal_alignment = 1
+
+[node name="P1 scheme" type="Label" parent="Control"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -527.0
+offset_top = 208.0
+offset_right = 1624.0
+offset_bottom = 355.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_rplur")
+theme_override_font_sizes/font_size = 25
+text = "P1 Control Scheme"
+horizontal_alignment = 1
+
+[node name="P1 scheme2" type="Label" parent="Control"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -527.0
+offset_top = 355.0
+offset_right = 1624.0
+offset_bottom = 502.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_rplur")
+theme_override_font_sizes/font_size = 25
+text = "P2 Control Scheme"
+horizontal_alignment = 1
+
+[node name="P1 controls" type="TextEdit" parent="Control"]
+layout_mode = 0
+offset_left = 379.0
+offset_top = 236.0
+offset_right = 729.0
+offset_bottom = 276.0
+placeholder_text = "TYPE HERE"
+
+[node name="P2 controls" type="TextEdit" parent="Control"]
+layout_mode = 0
+offset_left = 379.0
+offset_top = 383.0
+offset_right = 729.0
+offset_bottom = 423.0
+placeholder_text = "TYPE HERE"
+
+[node name="ErrorLabel" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 70.0
+offset_top = 135.0
+offset_right = 184.0
+offset_bottom = 184.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+
+[node name="Save" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 453.0
+offset_top = 502.0
+offset_right = 653.0
+offset_bottom = 544.0
+theme_override_font_sizes/font_size = 24
+text = "SAVE"
+
+[node name="Return" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 453.0
+offset_top = 561.0
+offset_right = 653.0
+offset_bottom = 603.0
+theme_override_font_sizes/font_size = 24
+text = "RETURN
+"
+
+[node name="P1" type="AnimatedSprite2D" parent="Control"]
+texture_filter = 1
+position = Vector2(226, 183)
+scale = Vector2(5, 5)
+sprite_frames = SubResource("SpriteFrames_m23xs")
+autoplay = "default"
+
+[node name="P2" type="AnimatedSprite2D" parent="Control"]
+texture_filter = 1
+position = Vector2(923, 182)
+scale = Vector2(5, 5)
+sprite_frames = SubResource("SpriteFrames_hmukn")
+autoplay = "default"
+flip_h = true
+
+[connection signal="text_changed" from="Control/P1 controls" to="." method="_on_p_1_controls_text_changed"]
+[connection signal="text_changed" from="Control/P2 controls" to="." method="_on_p_2_controls_text_changed"]
+[connection signal="pressed" from="Control/Save" to="." method="_on_save_pressed"]
+[connection signal="pressed" from="Control/Return" to="." method="_on_return_pressed"]

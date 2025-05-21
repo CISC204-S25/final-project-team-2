@@ -1,22 +1,23 @@
-[gd_scene load_steps=20 format=3 uid="uid://cu5onq87xwqh7"]
+[gd_scene load_steps=21 format=3 uid="uid://cu5onq87xwqh7"]
 
-[ext_resource type="FontFile" uid="uid://ce5dcdxr2t7fm" path="res://assets/fonts/PixelOperator8.ttf" id="1_1c6md"]
-[ext_resource type="Texture2D" uid="uid://d2gvw5m8cjhd8" path="res://assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/01_idle/idle_1.png" id="2_we4db"]
-[ext_resource type="Texture2D" uid="uid://bjma3ade3mj73" path="res://assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/01_idle/idle_2.png" id="3_2kaui"]
-[ext_resource type="Texture2D" uid="uid://tl7pcpb7eguj" path="res://assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/01_idle/idle_3.png" id="4_fip6o"]
-[ext_resource type="Texture2D" uid="uid://d3wankikte35t" path="res://assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/01_idle/idle_4.png" id="5_7ib4n"]
-[ext_resource type="Texture2D" uid="uid://n0dfprhdgu5r" path="res://assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/01_idle/idle_5.png" id="6_qekjv"]
-[ext_resource type="Texture2D" uid="uid://bbknvjdv2vuop" path="res://assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/01_idle/idle_6.png" id="7_cdt4w"]
-[ext_resource type="Texture2D" uid="uid://bpdy48d6hekmu" path="res://assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/01_idle/idle_7.png" id="8_6452h"]
-[ext_resource type="Texture2D" uid="uid://cuvni3lnalm0y" path="res://assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/01_idle/idle_8.png" id="9_fmk7m"]
-[ext_resource type="Texture2D" uid="uid://cdhv63jurkggp" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/01_idle/idle_1.png" id="10_hs5wa"]
-[ext_resource type="Texture2D" uid="uid://d01g7p82f4fo6" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/01_idle/idle_2.png" id="11_0bu6l"]
-[ext_resource type="Texture2D" uid="uid://c83rycjm6pbse" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/01_idle/idle_3.png" id="12_d1a23"]
-[ext_resource type="Texture2D" uid="uid://b2ld6h8x6p6kl" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/01_idle/idle_4.png" id="13_tnjb0"]
-[ext_resource type="Texture2D" uid="uid://c3onrbdqrgeav" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/01_idle/idle_5.png" id="14_w3pwm"]
-[ext_resource type="Texture2D" uid="uid://cb1bl1aj6rrnl" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/01_idle/idle_6.png" id="15_vc2j6"]
-[ext_resource type="Texture2D" uid="uid://dxgc1jwo5tr8x" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/01_idle/idle_7.png" id="16_sygwt"]
-[ext_resource type="Texture2D" uid="uid://37pdhuo8pp7n" path="res://assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/01_idle/idle_8.png" id="17_3ln8j"]
+[ext_resource type="FontFile" uid="uid://ce5dcdxr2t7fm" path="res://Assets/fonts/PixelOperator8.ttf" id="1_1c6md"]
+[ext_resource type="Script" path="res://scripts/main_menu.gd" id="1_3jqvn"]
+[ext_resource type="Texture2D" uid="uid://d2gvw5m8cjhd8" path="res://Assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/01_idle/idle_1.png" id="2_we4db"]
+[ext_resource type="Texture2D" uid="uid://bjma3ade3mj73" path="res://Assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/01_idle/idle_2.png" id="3_2kaui"]
+[ext_resource type="Texture2D" uid="uid://tl7pcpb7eguj" path="res://Assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/01_idle/idle_3.png" id="4_fip6o"]
+[ext_resource type="Texture2D" uid="uid://d3wankikte35t" path="res://Assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/01_idle/idle_4.png" id="5_7ib4n"]
+[ext_resource type="Texture2D" uid="uid://n0dfprhdgu5r" path="res://Assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/01_idle/idle_5.png" id="6_qekjv"]
+[ext_resource type="Texture2D" uid="uid://bbknvjdv2vuop" path="res://Assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/01_idle/idle_6.png" id="7_cdt4w"]
+[ext_resource type="Texture2D" uid="uid://bpdy48d6hekmu" path="res://Assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/01_idle/idle_7.png" id="8_6452h"]
+[ext_resource type="Texture2D" uid="uid://cuvni3lnalm0y" path="res://Assets/Elementals_fire_knight_FREE_v1.1 (1)/Elementals_fire_knight_FREE_v1.1/png/fire_knight/01_idle/idle_8.png" id="9_fmk7m"]
+[ext_resource type="Texture2D" uid="uid://cdhv63jurkggp" path="res://Assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/01_idle/idle_1.png" id="10_hs5wa"]
+[ext_resource type="Texture2D" uid="uid://d01g7p82f4fo6" path="res://Assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/01_idle/idle_2.png" id="11_0bu6l"]
+[ext_resource type="Texture2D" uid="uid://c83rycjm6pbse" path="res://Assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/01_idle/idle_3.png" id="12_d1a23"]
+[ext_resource type="Texture2D" uid="uid://b2ld6h8x6p6kl" path="res://Assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/01_idle/idle_4.png" id="13_tnjb0"]
+[ext_resource type="Texture2D" uid="uid://c3onrbdqrgeav" path="res://Assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/01_idle/idle_5.png" id="14_w3pwm"]
+[ext_resource type="Texture2D" uid="uid://cb1bl1aj6rrnl" path="res://Assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/01_idle/idle_6.png" id="15_vc2j6"]
+[ext_resource type="Texture2D" uid="uid://dxgc1jwo5tr8x" path="res://Assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/01_idle/idle_7.png" id="16_sygwt"]
+[ext_resource type="Texture2D" uid="uid://37pdhuo8pp7n" path="res://Assets/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/01_idle/idle_8.png" id="17_3ln8j"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ju8lr"]
 animations = [{
@@ -89,6 +90,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_3jqvn")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -107,7 +109,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(1, 1, 1, 0.196078)
+color = Color(0, 0, 0, 0.145098)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Control"]
 layout_mode = 1
@@ -125,6 +127,7 @@ theme_override_constants/separation = 40
 
 [node name="Play" type="Button" parent="CanvasLayer/Control/VBoxContainer"]
 texture_filter = 1
+custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
 theme_override_fonts/font = ExtResource("1_1c6md")
 theme_override_font_sizes/font_size = 24
@@ -132,6 +135,7 @@ text = "Play"
 
 [node name="Options" type="Button" parent="CanvasLayer/Control/VBoxContainer"]
 texture_filter = 1
+custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
 theme_override_fonts/font = ExtResource("1_1c6md")
 theme_override_font_sizes/font_size = 24
@@ -139,6 +143,7 @@ text = "Options"
 
 [node name="Quit" type="Button" parent="CanvasLayer/Control/VBoxContainer"]
 texture_filter = 1
+custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
 theme_override_fonts/font = ExtResource("1_1c6md")
 theme_override_font_sizes/font_size = 24
@@ -150,14 +155,15 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -223.5
-offset_top = 129.0
-offset_right = 224.5
-offset_bottom = 236.0
+offset_left = -269.5
+offset_top = 79.0
+offset_right = 270.5
+offset_bottom = 226.0
 grow_horizontal = 2
 theme_override_fonts/font = ExtResource("1_1c6md")
 theme_override_font_sizes/font_size = 72
-text = "Game Title"
+text = "Elemental
+Warriors"
 horizontal_alignment = 1
 
 [node name="P1" type="AnimatedSprite2D" parent="CanvasLayer/Control"]
@@ -176,3 +182,7 @@ sprite_frames = SubResource("SpriteFrames_n07ct")
 autoplay = "default"
 frame_progress = 0.00676344
 flip_h = true
+
+[connection signal="pressed" from="CanvasLayer/Control/VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/VBoxContainer/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
