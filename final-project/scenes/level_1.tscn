@@ -1,17 +1,18 @@
-[gd_scene load_steps=18 format=4 uid="uid://d320afep02ay3"]
+[gd_scene load_steps=19 format=4 uid="uid://d320afep02ay3"]
 
 [ext_resource type="PackedScene" uid="uid://c8ie0244cydb2" path="res://scenes/player1.tscn" id="1_0xe55"]
 [ext_resource type="Script" path="res://scripts/level_1.gd" id="1_a38od"]
 [ext_resource type="PackedScene" uid="uid://b6yqtnejqriff" path="res://scenes/player2.tscn" id="2_p5l4j"]
 [ext_resource type="Script" path="res://scripts/camera.gd" id="3_rtdvi"]
 [ext_resource type="Texture2D" uid="uid://hingq11umdye" path="res://Assets/sprites/world_tileset.png" id="4_385uv"]
-[ext_resource type="PackedScene" path="res://scenes/goal.tscn" id="5_33dsf"]
+[ext_resource type="PackedScene" uid="uid://cfd3tyrs53k8w" path="res://scenes/goal.tscn" id="5_33dsf"]
 [ext_resource type="PackedScene" uid="uid://bfxno3w35vmot" path="res://scenes/platform.tscn" id="6_1c50h"]
-[ext_resource type="PackedScene" path="res://scenes/world_border.tscn" id="7_v54d3"]
+[ext_resource type="PackedScene" uid="uid://b5io0v2ouqdk3" path="res://scenes/world_border.tscn" id="7_v54d3"]
 [ext_resource type="PackedScene" uid="uid://ctckyvkey2lv4" path="res://scenes/victory.tscn" id="9_dxnr4"]
 [ext_resource type="PackedScene" uid="uid://cjasexnaf3hfy" path="res://scenes/death.tscn" id="10_3rdui"]
 [ext_resource type="PackedScene" uid="uid://bsteetja1gmwh" path="res://scenes/fire_key.tscn" id="11_34bbh"]
 [ext_resource type="PackedScene" uid="uid://t1heoheu4ckg" path="res://scenes/ice_key.tscn" id="12_aqpoj"]
+[ext_resource type="AudioStream" uid="uid://dxcgid61e0hhr" path="res://Assets/music/time_for_adventure.mp3" id="13_to1vx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rf2qd"]
 texture = ExtResource("4_385uv")
@@ -284,5 +285,10 @@ position = Vector2(-74, -291)
 
 [node name="ice_key" parent="." instance=ExtResource("12_aqpoj")]
 position = Vector2(37, -81)
+
+[node name="bgMusic" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("13_to1vx")
+volume_db = -25.0
+parameters/looping = true
 
 [connection signal="death" from="WorldBorder" to="." method="_on_world_border_death"]
