@@ -1,15 +1,17 @@
-[gd_scene load_steps=16 format=4 uid="uid://0wufblyifg4j"]
+[gd_scene load_steps=18 format=4 uid="uid://d320afep02ay3"]
 
 [ext_resource type="PackedScene" uid="uid://c8ie0244cydb2" path="res://scenes/player1.tscn" id="1_0xe55"]
 [ext_resource type="Script" path="res://scripts/level_1.gd" id="1_a38od"]
 [ext_resource type="PackedScene" uid="uid://b6yqtnejqriff" path="res://scenes/player2.tscn" id="2_p5l4j"]
 [ext_resource type="Script" path="res://scripts/camera.gd" id="3_rtdvi"]
-[ext_resource type="Texture2D" uid="uid://hingq11umdye" path="res://assets/sprites/world_tileset.png" id="4_385uv"]
-[ext_resource type="PackedScene" uid="uid://cfd3tyrs53k8w" path="res://scenes/goal.tscn" id="5_33dsf"]
+[ext_resource type="Texture2D" uid="uid://hingq11umdye" path="res://Assets/sprites/world_tileset.png" id="4_385uv"]
+[ext_resource type="PackedScene" path="res://scenes/goal.tscn" id="5_33dsf"]
 [ext_resource type="PackedScene" uid="uid://bfxno3w35vmot" path="res://scenes/platform.tscn" id="6_1c50h"]
-[ext_resource type="PackedScene" uid="uid://b5io0v2ouqdk3" path="res://scenes/world_border.tscn" id="7_v54d3"]
-[ext_resource type="PackedScene" uid="uid://b34sxfs6quhap" path="res://scenes/victory.tscn" id="9_dxnr4"]
-[ext_resource type="PackedScene" uid="uid://cmnvuond0ruhg" path="res://scenes/death.tscn" id="10_3rdui"]
+[ext_resource type="PackedScene" path="res://scenes/world_border.tscn" id="7_v54d3"]
+[ext_resource type="PackedScene" path="res://scenes/victory.tscn" id="9_dxnr4"]
+[ext_resource type="PackedScene" path="res://scenes/death.tscn" id="10_3rdui"]
+[ext_resource type="PackedScene" uid="uid://bsteetja1gmwh" path="res://scenes/fire_key.tscn" id="11_34bbh"]
+[ext_resource type="PackedScene" uid="uid://t1heoheu4ckg" path="res://scenes/ice_key.tscn" id="12_aqpoj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rf2qd"]
 texture = ExtResource("4_385uv")
@@ -185,6 +187,21 @@ texture = ExtResource("4_385uv")
 physics_layer_0/collision_layer = 2
 sources/0 = SubResource("TileSetAtlasSource_rf2qd")
 
+[sub_resource type="Animation" id="Animation_mxkp0"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(368, 36)]
+}
+
 [sub_resource type="Animation" id="Animation_rkfdg"]
 resource_name = "up_down_platform"
 length = 3.0
@@ -200,21 +217,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(368, 36), Vector2(368, -150)]
-}
-
-[sub_resource type="Animation" id="Animation_mxkp0"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(368, 36)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_h4fg5"]
@@ -276,5 +278,11 @@ visible = false
 
 [node name="Death" parent="." instance=ExtResource("10_3rdui")]
 visible = false
+
+[node name="fire_key" parent="." instance=ExtResource("11_34bbh")]
+position = Vector2(-74, -291)
+
+[node name="ice_key" parent="." instance=ExtResource("12_aqpoj")]
+position = Vector2(37, -81)
 
 [connection signal="death" from="WorldBorder" to="." method="_on_world_border_death"]

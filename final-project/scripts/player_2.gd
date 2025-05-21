@@ -16,6 +16,9 @@ const FALL_GRAVITY = 200
 var animationPlaying = true
 @export var inExit = false
 
+func _ready():
+	add_to_group("player2")
+
 func check_gravity(v):
 	if v.y < 0:
 		return GRAVITY

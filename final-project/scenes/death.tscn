@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://cmnvuond0ruhg"]
+[gd_scene load_steps=3 format=3 uid="uid://cjasexnaf3hfy"]
 
 [ext_resource type="Script" path="res://scripts/death.gd" id="1_1uwgd"]
-[ext_resource type="FontFile" uid="uid://ce5dcdxr2t7fm" path="res://assets/fonts/PixelOperator8.ttf" id="2_27dmk"]
+[ext_resource type="FontFile" uid="uid://ce5dcdxr2t7fm" path="res://Assets/fonts/PixelOperator8.ttf" id="2_27dmk"]
 
 [node name="Death" type="Control"]
 layout_mode = 3

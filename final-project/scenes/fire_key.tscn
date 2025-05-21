@@ -1,0 +1,153 @@
+[gd_scene load_steps=12 format=3 uid="uid://bsteetja1gmwh"]
+
+[ext_resource type="Script" path="res://scripts/coin.gd" id="1_im4ds"]
+[ext_resource type="Texture2D" uid="uid://ba7vsja7yam0" path="res://Assets/Fire & Ice Key/Fire Key/Fire Key Single Frames/Fire Key 1.png" id="2_5uggm"]
+[ext_resource type="Texture2D" uid="uid://c4oqkfydr5b8k" path="res://Assets/Fire & Ice Key/Fire Key/Fire Key Single Frames/Fire Key 2.png" id="3_7tnqr"]
+[ext_resource type="AudioStream" uid="uid://b32wgfsa2i0mc" path="res://Assets/sounds/coin.wav" id="3_xw5b8"]
+[ext_resource type="Texture2D" uid="uid://bn3mdoy12gv3" path="res://Assets/Fire & Ice Key/Fire Key/Fire Key Single Frames/Fire Key 3.png" id="4_sat0i"]
+[ext_resource type="Texture2D" uid="uid://ogk8oftjj8dq" path="res://Assets/Fire & Ice Key/Fire Key/Fire Key Single Frames/Fire Key 4.png" id="5_khlkq"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4u3f7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_5uggm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_7tnqr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_sat0i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_khlkq")
+}],
+"loop": true,
+"name": &"fire_key",
+"speed": 6.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5vo3j"]
+radius = 12.0416
+
+[sub_resource type="Animation" id="Animation_6gtcx"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("PickupSound:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_2u4ln"]
+resource_name = "pickup"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("PickupSound:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "method"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath(".")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(1),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"queue_free"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6ahmj"]
+_data = {
+"RESET": SubResource("Animation_6gtcx"),
+"pickup": SubResource("Animation_2u4ln")
+}
+
+[node name="Coin" type="Area2D"]
+collision_layer = 2
+script = ExtResource("1_im4ds")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_4u3f7")
+animation = &"fire_key"
+autoplay = "fire_key"
+frame_progress = 0.944111
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_5vo3j")
+
+[node name="PickupSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_xw5b8")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_6ahmj")
+}
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

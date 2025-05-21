@@ -17,6 +17,9 @@ var jumps = 2
 
 var animationPlaying = true
 
+func _ready():
+	add_to_group("player1")
+	
 func check_gravity(v):
 	if v.y < 0:
 		return GRAVITY

@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://brhna15plcric"]
+
+[ext_resource type="Script" path="res://scripts/coin.gd" id="1_4h1rd"]
+[ext_resource type="AudioStream" uid="uid://b32wgfsa2i0mc" path="res://Assets/sounds/coin.wav" id="6_dj15b"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5vo3j"]
+radius = 12.0416
+
+[node name="Slime" type="Area2D"]
+collision_layer = 2
+script = ExtResource("1_4h1rd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_5vo3j")
+
+[node name="PickupSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_dj15b")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
